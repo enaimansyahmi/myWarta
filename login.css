@@ -14,7 +14,10 @@
 html, body{
     height: 100%;
     overflow: hidden;
-    /* background: var(--background1); */
+    background: var(--background1);
+    background: url("myresume_assets/img/bg1.jpg") top right no-repeat;
+    background-size: cover;
+    position: relative;
     /*background: var(--mango-gradient);*/
 }
 
@@ -34,7 +37,7 @@ html, body{
 }
 header{
     width: 100%;
-    height: 70px;
+    height: 700px;
     box-shadow: var(--primary-shadow);
     position: absolute;
 }
@@ -59,29 +62,33 @@ header .ii{font-family: var(--take);position: absolute;left: 48%;top: 40px;}
     max-height: 610px;
 }
 
-.container .panel{
-    width: 60%;
-    height: 72%;
-    box-shadow: var(--primary-gradient);
-}
+
 
 .row{
-    border-radius: 40px;
-    display: grid;
-    grid-template-columns: 65% 35%;
-    height: 100%;
+    /* border-radius: 40px; */
+    /* display: grid; */
+    /* grid-template-columns: 65% 35%; */
+    /* width: 500px; */
+    /* height: 100%; */
     background: #fff;    
     box-shadow: var(--primary-shadow);
+    align-content: center;
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 350px;
+    height: 500px;
+    /* outline: dashed 1px black; */
 }
 
-.liquid{
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+/* .liquid{
+    border-top-left-radius: 40px; 
+    border-bottom-left-radius: 40px; 
     background: url('../assets/Wave.png');
     background-size: cover;
     background-repeat: no-repeat;
     
-}
+} */
 
 .liquid h2{
     text-align: left;
@@ -169,8 +176,8 @@ header .ii{font-family: var(--take);position: absolute;left: 48%;top: 40px;}
 .btn{
     padding: .5rem 1.5rem;
     border: none;
-    border-radius: 4rem;
-    background:  var(--primary-gradient);/*#2b5876;*/
+    /* border-radius: 4rem; */
+    background:  #002aff;
     color: whitesmoke;
     font-size: .7rem;
     font-family: var(--Montserrat);
@@ -181,19 +188,7 @@ header .ii{font-family: var(--take);position: absolute;left: 48%;top: 40px;}
     box-shadow: var(--primary-shadow);
 }
 
-.login .btn-signup, 
-.btn-login{
-    background: var(--primary-gradient);
-    float: right;
-    margin: 1rem;
-}
-form .btn-signup{
-    background: var(--primary-gradient);
-    float: right;
-}
-.titles{
-    margin-bottom: 2.2rem;
-}
+
 
 form{
     height: 55%;
@@ -202,64 +197,63 @@ form{
 }
 
 form h3, form h6{
+    text-align: center;
     font-family: var(--Montserrat);
     padding: 0;
     margin: 0;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
 }
 
 form h6{
-    font-family: var(--Lobster);
+    /* font-family: var(--Lobster); */
+    font-size: 10px;
     color: #444444d2;
 }
 
 form .form-group{
     text-align: left;
     border: 1px solid var(--border-color);
-    margin-top: .9rem;
-    margin-right: 2rem;
     border-radius: 3rem;
+    margin: auto;
+    /* height: 10px; */
+    width: 100%;
+    /* padding: 20px; */
+    /* border-width: 2.3px; */
 }
 
 form .form-group .form-input{
-    padding: .5rem 1rem;
+    /* padding: .5rem 1rem; */
     background: transparent;
     border: none;
     font-family: var(--Montserrat);
     font-size: .9rem;
-    overflow: hidden;
+    width:100%;
+    text-align: center;
+    /* overflow: hidden; */
+    /* text-align: center; */
 }
 
-form input:focus{
-    outline: none;
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .owl-carousel {
+        display: none !important;
+    }
 }
 
-form .input-icon{
-    display: inline;
-    color: var(--border-color);
-    display: inline;
-    color: var(--border-color);
-    position: relative;
-    left: 10%;
+@media screen and (max-width: 1024px) {
+    .follow {
+        display: none !important;
+    }
 }
-form .input-icon img{
-    width: 1em;
-    height: 1em;
-}
-form .btn-login{
-    float: none;
-    padding: .8rem 5rem;
-    margin-left: 2rem;
-}
-form .btn-signup{
-    float: none;
-    padding: .8rem 5rem;
-    margin-left: 2rem;
-}
-.titles1{position: absolute;top: 15px;}#login-page{position: absolute;right: 21%; top: 15px;}#signupbtn{position: relative;top: 20px;}
-form .agrees{
-    color: var(--border-color);
-    font-family: var(--Lobster);
-    padding-right: 10px;
-    margin-top: 10px;
-}
+
+.btn-primary {
+    /* border: 5px solid; */
+    /* margin: 25px; */
+    padding:10px;
+    width: 100%;
+    
+    /* padding: 10px; */    
+  }
